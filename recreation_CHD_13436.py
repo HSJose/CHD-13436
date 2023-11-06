@@ -28,9 +28,9 @@ def call_api(url: str, data: dict = None, headers: dict = None):
 
 def main() -> None:
     # Device to target
-    device_id = '0325018084594'
-    hostname = 'dev-us-sny-9-proxy-25-lin.headspin.io'
-    device_address = '0325018084594@dev-us-sny-9-proxy-25-lin.headspin.io'
+    device_id = os.getenv('DEVICE_ID')
+    hostname = os.getenv('HOSTNAME')
+    device_address = os.getenv('DEVICE_ADDRESS')
     session_id = None
 
     # Shaping dict
