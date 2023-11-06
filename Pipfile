@@ -7,6 +7,7 @@ name = "pypi"
 httpx = "*"
 python-dotenv = "*"
 rich = "*"
+appium-python-client = "*"
 
 [dev-packages]
 
