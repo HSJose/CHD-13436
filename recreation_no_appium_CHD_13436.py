@@ -40,8 +40,8 @@ def main() -> None:
 
     # Shaping dict
     network_shaping = {
-        "down": 0,
-        "up": 0
+        "down": 0.1,
+        "up": 0.1
     }
 
     # Capture dict

@@ -20,9 +20,9 @@ base_api_url = f'https://{api_key}@api-dev.headspin.io'
 def main() -> None:
     # Device to target
     # DUT
-    dut_device_id = os.getenv('NvidiaShield_1_DUT_Id')
-    dut_hostname = os.getenv('NvidiaShield_1_DUT_Host')
-    dut_device_address = os.getenv('NvidiaShield_1_DUT_Address')
+    dut_device_id = os.getenv('NvidiaShield_2_DUT_Id')
+    dut_hostname = os.getenv('NvidiaShield_2_DUT_Host')
+    dut_device_address = os.getenv('NvidiaShield_2_DUT_Address')
 
     #Load Balancer Web Driver URL
     wd_url = f'https://appium-dev.headspin.io:443/v0/{api_key}/wd/hub'
@@ -36,8 +36,8 @@ def main() -> None:
         "headspin:capture": True,
         "headspin:capture.networkConfig": {
             "shaping": {
-                "down": 20,
-                "up": 20
+                "down": 0.1,
+                "up": 0.1
             }
         },
         "headspin:controlLock": True,
