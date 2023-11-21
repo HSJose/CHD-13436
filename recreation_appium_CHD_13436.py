@@ -20,9 +20,9 @@ base_api_url = f'https://{api_key}@api-dev.headspin.io'
 def main() -> None:
     # Device to target
     # DUT
-    dut_device_id = os.getenv('DUT_DEVICE_ID_1')
-    dut_hostname = os.getenv('DUT_HOSTNAME_1')
-    dut_device_address = os.getenv('DUT_DEVICE_ADDRESS_1')
+    dut_device_id = os.getenv('NvidiaShield_1_DUT_Id')
+    dut_hostname = os.getenv('NvidiaShield_1_DUT_Host')
+    dut_device_address = os.getenv('NvidiaShield_1_DUT_Address')
 
     #Load Balancer Web Driver URL
     wd_url = f'https://appium-dev.headspin.io:443/v0/{api_key}/wd/hub'
